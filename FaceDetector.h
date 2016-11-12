@@ -23,11 +23,11 @@ class FaceDetector {
     
 public:
     FaceDetector();
-    void DetectAndDisplay(Mat frame);
+    void DetectAndDisplay(Mat frame, vector<Rect>& faces);
     
 private:
     CascadeClassifier face_cascade;
-    CascadeClassifier eyes_cascade;
+    //CascadeClassifier eyes_cascade;
 };
 
 

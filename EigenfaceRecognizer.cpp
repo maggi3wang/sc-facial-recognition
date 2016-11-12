@@ -8,3 +8,15 @@
 
 #include "EigenfaceRecognizer.h"
 
+EigenfaceRecognizer::EigenfaceRecognizer() {
+
+}
+
+//bool EigenfaceRecognizer::Recognize(Mat &face) {
+//    Mat gray;
+//    cvtColor(face, gray, CV_BGR2GRAY);
+//    _model->predict(gray);
+//    return true;
+//}
+
+EigenfaceRecognizer::~EigenfaceRecognizer() {}

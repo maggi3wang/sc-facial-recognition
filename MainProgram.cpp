@@ -8,8 +8,9 @@
 
 #include "FaceDetector.h"
 
+/*
 int main() {
-    
+
     FaceDetector* faceDetector = new FaceDetector();
     
     VideoCapture capture;
@@ -22,16 +23,19 @@ int main() {
         return -1;
     }
     
+    vector<Rect> faces;
+    
     while (  capture.read(frame) ) {
         if( frame.empty() ) {
             printf(" --(!) No captured frame -- Break!");
             break;
         }
         
-        faceDetector->DetectAndDisplay( frame );
+        faceDetector->DetectAndDisplay( frame,  faces);
         int c = waitKey(10);
         if( (char)c == 27 ) { break; } // escape
     }
     
     return 0;
 }
+*/

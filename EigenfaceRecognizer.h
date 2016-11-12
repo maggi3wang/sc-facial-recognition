@@ -25,14 +25,12 @@ class EigenfaceRecognizer {
 public:
     EigenfaceRecognizer();
     ~EigenfaceRecognizer();
-    bool AddTrainingImage(const string &filename, const string &name);
-    bool Train();
-    string Recognize(Mat &face);
+    //bool AddTrainingImage(const string &filename, const string &name);
+    //bool Train();
+    //bool Recognize(Mat &face);
 
 private:
-    bool loadTrainingImages();
-    
-    Ptr<FaceRecognizer> model = createEigenFaceRecognizer();
+    Ptr<FaceRecognizer> _model;
 };
 
 #endif /* EigenfaceRecognizer_h */
